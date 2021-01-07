@@ -2,7 +2,7 @@ import lyricsgenius
 import requests
 import json
 
-bearer = 'Bearer BQB33j5somlTuoTZcZNeY3xOHcyA8f-nNMs2s4k_dCzJlL7gZXdBvVCgu-SFsYYvDMVWhbwTlfuzqH_q7QPe2JSA7yL4PMWo49g4mQR21hfPk9ySjYw2fGdS0vWkra-pKEbZ2kWv6ujR-sQRIaRSlw8wpGoe2yH-7D-Ka0oEXClrmM1EBpSFtqZFSjXh3yNCfulBY6Bhqz6eWkkh6zd221Pc1SLctGes10V_akcr8rwVG7K6CtiCIMzmhiE5gVGSnkFjWKS5Faqfdi-_0rU6'
+bearer = 'Bearer BQDAYkTA5zFhNUhbSBHMh7XcYaKLl4RLF6_J2PuRZ6jZzHcq6uwrqfxUZLWyieott4FFPp88jeGHLUqwzdUSBSNyTd8vOUAtTVJfjC6kmOT9xW6sFG7RvvZaQWSmnD5dNwocpwQZosGYjtMl1S73Du_kcHbZjqfoh0B2IKUd6gfLKpBBWTuyH1Mu4p2KAfJa-SA9OR9RzbDJT-ozbH6w_kYCNdaJMobTMQUfEZCTFhydkMuAEQvpSLUQ2e-VaObUe8OBkXLBWdRv9w_TCSZJ'
 
 checkIfPlaysHeaders = {
     'Accept': 'application/json',
@@ -23,7 +23,7 @@ if response.get('is_playing'):
 
     #print('Currently playing:', artistName,' - ' , songName)
 
-    geniusToken = 'VoyUbspPoaKiCFM3wv4f8lnBrIqtEno7haI_-jKyr1O6qXn0vwPZbHEnXJ4ZX7-6'
+    geniusToken = '_GMyErJoefQ4VBSD1zaXFROpuKFnGiV7a99yiDFk2hHwadKihVT_NSoUUIXsCww6'
     genius = lyricsgenius.Genius(geniusToken)
     song = genius.search_song(songName, artistName)
     print(song.lyrics)
